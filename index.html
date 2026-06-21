@@ -270,69 +270,68 @@ const PHASES = [
   {
     name: "PHASE 1",
     weeks: "Weeks 1-2",
-    title: "Calm + Isolate",
-    goal: "Calm the painful knee baseline and isolate the active drivers. Bike leads the outdoor days, leg press stays bilateral, hip and foot control stay precise, elbow loading becomes more intentional, and shadowboxing returns as slow technical practice."
+    title: "Calm + Rebuild Inputs",
+    goal: "Calm the knee baseline while rebuilding the missing inputs: arch control, hip rotation, hamstring capacity, single-leg balance, and precise elbow loading. Outdoor work stays predictable and Thursday is full recovery."
   },
   {
     name: "PHASE 2",
     weeks: "Weeks 3-4",
     title: "Build Capacity",
-    goal: "Build capacity only from clean reps. Bike time rises, bilateral leg press can grow slightly, light single-leg machine work appears only when the bilateral pattern is quiet, and elbow work reaches three weekly exposures."
+    goal: "Build capacity from clean reactions only. Hamstring curls, heel-bridge holds, and single-leg balance become reliable weekly anchors while leg press remains symptom-gated."
   },
   {
     name: "PHASE 3",
     weeks: "Weeks 5-6",
     title: "Integrate",
-    goal: "Integrate the chain. Add shallow hinge retraining, floor-based kick-position holds, and three weekly technical shadowboxing sessions while keeping every rep slow enough to audit foot arch, knee line, and left hip position."
+    goal: "Integrate the chain without adding chaos. Small hinge work returns, unilateral machine loading stays light, and balance progresses by arch and knee-line quality."
   },
   {
     name: "PHASE 4",
     weeks: "Weeks 7-8",
     title: "Return Prep",
-    goal: "Prepare for the next training block. Maintain the bike and leg press base, progress hinge and slow-kick control only from quiet symptoms, and finish ready to restart gym lifting before later bagwork."
+    goal: "Prepare for the next training block. Maintain the bike and leg press base, finish the hamstring and balance block cleanly, and keep elbow loading strong but non-irritating."
   }
 ];
 
 const WEEK_SCHEDULE = [
-  { day: "MON", session: "OUTDOOR A", label: "Bike + Bilateral Leg Press + Calf/Foot", time: "55-70 min", loc: "OUTDOOR" },
-  { day: "TUE", session: "OUTDOOR B", label: "Longest Bike + Lighter Leg Press + Calf/Foot", time: "60-75 min", loc: "OUTDOOR" },
-  { day: "WED", session: "UPPER A", label: "Elbow Strength + Shoulder/Scapula + Foot", time: "40-55 min", loc: "HOME" },
-  { day: "THU", session: "HIP FOOT", label: "Hip/Foot Control + Technical Shadowboxing", time: "35-50 min", loc: "HOME" },
-  { day: "FRI", session: "UPPER B", label: "Elbow Strength + Shoulder/Scapula + Easy Foot", time: "40-55 min", loc: "HOME" },
-  { day: "SAT", session: "SKILL", label: "Shadowboxing + Hip/Foot + Light Elbow", time: "35-50 min", loc: "HOME" },
-  { day: "SUN", session: "REST", label: "Rest or 10-Min Easy Walk", time: "0-10 min" }
+  { day: "MON", session: "OUTDOOR A", label: "Bike + Bilateral Leg Press + Calf/Foot", time: "45-60 min", loc: "OUTDOOR" },
+  { day: "TUE", session: "OUTDOOR B", label: "Bike + Tempo Leg Press + Balance", time: "45-60 min", loc: "OUTDOOR" },
+  { day: "WED", session: "LONG HOME", label: "Hamstrings + Elbow Strength + Shoulder/Foot", time: "60-70 min", loc: "HOME" },
+  { day: "THU", session: "REST", label: "Rest + Daily Primer Only", time: "12-15 min", loc: "REST" },
+  { day: "FRI", session: "LIGHT HOME", label: "Elbow + Hip/Shoulder Reset", time: "30-40 min", loc: "HOME" },
+  { day: "SAT", session: "HIP BALANCE", label: "Reduced Hip + Hamstrings + Balance", time: "25-35 min", loc: "HOME" },
+  { day: "SUN", session: "SHORT RESET", label: "Short Hamstring/Balance Reset", time: "20-30 min", loc: "HOME" }
 ];
 
 const WARMUP = {
-  "OUTDOOR A": ["Bike starts the session; first 5 min are very easy", "Shoulder-width stance check in Nike Free Metcon 6", "Tripod foot: big toe, little toe, heel loaded before leg press"],
-  "OUTDOOR B": ["Bike starts the session; first 5 min are very easy", "Smooth cadence and easy resistance", "Tripod foot reset before every leg press set"],
-  "UPPER A": ["Arm circles x10 each direction", "Scapular retraction x12", "Wrist circles + fist flex x10", "Short-foot holds 2x15 sec/side"],
-  "HIP FOOT": ["Easy marching in place - 2 min", "Tripod weight shifts x8/side", "Shoulder-width turnout check"],
-  "UPPER B": ["Arm circles x10 each direction", "Scapular retraction x12", "Wrist circles + fist flex x10", "Short-foot holds 2x15 sec/side"],
-  "SKILL": ["Easy marching in place - 2 min", "Tripod weight shifts x8/side", "Slow chamber rehearsal near a wall"]
+  "OUTDOOR A": ["Bike starts the session; first 5 min are very easy", "Shoe check: three-point foot contact before machine work", "Knee-to-wall ankle rocks x6/side in smooth range", "Leg press starts with one unloaded calibration set"],
+  "OUTDOOR B": ["Bike starts the session; first 5 min are very easy", "Smooth cadence and easy resistance", "Knee-to-wall ankle rocks x6/side in smooth range", "Reset arch and knee line before each leg press set"],
+  "LONG HOME": ["Arm circles x10 each direction", "Scapular retraction x12", "Wrist circles x10 each direction", "Short-foot holds 2x15 sec/side"],
+  "LIGHT HOME": ["Arm circles x8 each direction", "Scapular retraction x10", "Wrist circles x8 each direction"],
+  "HIP BALANCE": ["Easy marching in place - 2 min", "Short-foot holds 2x15 sec/side", "Shoulder-width turnout check"],
+  "SHORT RESET": ["Easy walk around the room - 2 min", "Short-foot holds 2x15 sec/side"]
 };
 
 const COOLDOWN = {
   "OUTDOOR A": ["60-sec log: knee baseline, left hip baseline, elbow baseline, right-knee catches", "Easy walking 2 min"],
   "OUTDOOR B": ["60-sec log: knee baseline, left hip baseline, elbow baseline, right-knee catches", "Easy walking 2 min"],
-  "UPPER A": ["Gentle elbow range of motion x10", "Log next-morning elbow stiffness tomorrow"],
-  "HIP FOOT": ["Easy walk around the room - 2 min", "Log whether arch collapse happened before knee valgus"],
-  "UPPER B": ["Gentle elbow range of motion x10", "Log next-morning elbow stiffness tomorrow"],
-  "SKILL": ["Easy walk around the room - 2 min", "Log shadowboxing reaction tomorrow"]
+  "LONG HOME": ["Gentle elbow range of motion x10", "Log next-morning elbow stiffness tomorrow", "Log whether balance ended before arch collapse"],
+  "LIGHT HOME": ["Gentle elbow range of motion x10", "Log next-morning elbow stiffness tomorrow"],
+  "HIP BALANCE": ["Easy walk around the room - 2 min", "Log left hip baseline and arch-control quality tomorrow"],
+  "SHORT RESET": ["Easy walk around the room - 2 min", "Log 24-hour knee and hip response tomorrow"]
 };
 
 const DAILY_MOBILITY = [
   {
-    name: "Foot control block",
+    name: "Foot arch + toe control block",
     sets: "3 min total",
-    description: "1 min short-foot holds, 1 min toe yoga, 1 min tripod weight shifts. Barefoot. Keep big toe, little toe, and heel heavy without toe gripping.",
-    target: "Builds active arch control so pronation does not become the first domino before knee valgus.",
+    description: "90 sec short-foot holds, then 90 sec toe yoga. Barefoot. Keep the toes relaxed during short-foot holds and keep the arch active during toe yoga.",
+    target: "Targets the bilateral pronation pattern named in symptoms so arch collapse is not the first step toward knee valgus.",
     videos: [
       { id: "DoEIW4Y8MEo", label: "Short-foot" },
-      { id: "zSFlNXMtArw", label: "Toe yoga" },
-      { id: "ryn8HlWVdTM", label: "Tripod foot" }
+      { id: "zSFlNXMtArw", label: "Toe yoga" }
     ],
-    video_note: "This is one 3-minute block, not three separate exercises."
+    video_note: "This is one timed block. No extra foot explanation drill is part of the primer."
   },
   {
     name: "Half-kneeling hip flexor stretch - left priority",
@@ -353,18 +352,18 @@ const DAILY_MOBILITY = [
   {
     name: "Shallow quad isometric",
     sets: "3 min total",
-    description: "Use a shallow knee bend or quad set in a pain-free range. Keep foot tripod and knee line quiet.",
-    target: "Gives the knees a calm activation signal without deep flexion or loaded terminal extension.",
+    description: "Use a shallow knee bend or quad set in a pain-free range. Stop before any pinch near terminal extension or deep flexion.",
+    target: "Matches the bilateral Hoffa fat-pad edema, patellar cartilage findings, and right medial patella resting position: quad signal without fat-pad compression positions.",
     video: "O1ZLyjK_V8s",
     video_note: "Use the small controlled quad squeeze concept. Stay away from any pinch."
   },
   {
-    name: "Day-specific reset",
+    name: "Hamstring heel-bridge isometric",
     sets: "3 min total",
-    description: "Wed/Fri/Sat: triceps isometric 2x20 sec, then easy elbow range. Mon/Tue/Thu/Sun: repeat short-foot holds and slow 90/90 hip rotation.",
-    target: "Keeps the primer exactly 15 minutes while matching the day: elbow signal on upper/skill days, foot/hip reset on the others.",
-    ref: true,
-    video_note: "Use the day rule exactly; do not add a sixth block."
+    description: "Heels farther from hips than a normal bridge. Lift only high enough to feel hamstrings. Hold 4-6 rounds of 15-20 sec with easy breathing.",
+    target: "Closes the hamstring gap from the symptom file and supports the bilateral grade I ACL signal by improving the quad-to-hamstring balance.",
+    video: "qs3O-kowfTM",
+    video_note: "This is hamstring-biased. If it turns into low-back or hip-front tension, lower the height."
   }
 ];
 
@@ -384,7 +383,7 @@ const GUARDRAILS = [
       "Pain above 2/10 that does not settle quickly means the next set or next session regresses.",
       "Higher baseline for 24-48h means repeat or reduce the next exposure.",
       "Sharp right-knee catch, locking, giving way, or swelling means stop lower-body progression.",
-      "Left hip locking, sharp groin catch, night pain, or worsening deep pain means remove hinge and kick-position work.",
+      "Left hip locking, sharp groin catch, night pain, or worsening deep pain means remove hinge work.",
       "Elbow morning stiffness over 10 min means reduce the next elbow exposure."
     ],
     fail: "The calendar never overrides symptoms."
@@ -396,797 +395,432 @@ const GUARDRAILS = [
       "Daily primer finishes inside 12-15 min.",
       "Four consecutive sessions have no 24-hour symptom spike.",
       "Bilateral leg press is clean: no catch and no front-inner kneecap baseline rise.",
-      "Floor balance improves by arch control, not compensation.",
-      "Shadowboxing produces no knee catch, no hip flare, and no elbow flare."
+      "Single-leg balance appears at least 3x/week and ends before arch collapse or knee drift.",
+      "Hamstring curl and heel-bridge work cause no posterior-knee cramp, front-hip pinch, or next-day baseline rise.",
+      "Elbow loading causes no next-morning stiffness over 10 min."
     ],
     fail: "Repeat the phase or reduce the noisy exercise first."
   },
   {
+    title: "Coverage map",
+    sub: "The weekly work must keep matching the imaging and symptom drivers.",
+    items: [
+      "Bilateral Hoffa edema, suprapatellar fluid, and patellar cartilage signal: bike first, controlled leg press depth, shallow quad isometrics, Thursday recovery, and shorter back-half sessions.",
+      "Bilateral grade I ACL signal plus hamstring underdevelopment: daily heel-bridge isometrics, banded hamstring curls, light unilateral machine work only after clean bilateral work, and single-leg balance at least 3x/week.",
+      "Right lateral meniscus anterior-horn signal and mechanical catch history: avoid uncontrolled open-chain rotation, keep leg press depth symptom-gated, and monitor catch, swelling, locking, and giving way.",
+      "Left anterior hip/groin pattern: hip flexor stretch, supine 90/90 rotation, clamshells, standing hip abduction, and later wall-hinge work only inside clean range.",
+      "Foot pronation and tib-fib control symptoms: short-foot, toe yoga, arch-controlled calf work, and balance quality gates.",
+      "Left elbow triceps insertion enthesitis with elbow fluid: slow banded triceps loading, exact banded isometrics, and shoulder/scapular support without snapping lockout."
+    ],
+    fail: "A symptom driver without a weekly target means the phase is incomplete."
+  },
+  {
     title: "8-week exit",
-    sub: "This is readiness for gym lifting and later bagwork, not clearance for sparring.",
+    sub: "This is readiness for the next training block, not a promise that symptoms are gone.",
     items: [
       "Knee baseline is not higher than at the start of the rebuild.",
       "Right-knee catch is not worsening and has no locking, giving way, or swelling.",
-      "Left hip tolerates shoulder-width turnout, shallow hinge, and slow kick positions without deep flare.",
-      "Elbow tolerates pressdown, overhead extension, and punch-angle holds without next-morning stiffness over 10 min.",
-      "Shadowboxing is controlled at moderate technical pace with no power shots."
+      "Left hip tolerates shoulder-width turnout, standing abduction, and shallow wall-hinge work without deep flare.",
+      "Hamstring curls and heel-bridge holds are stronger than Week 1 without knee or hip flare.",
+      "Single-leg balance is cleaner on both sides through arch control, not ankle collapse or knee drift.",
+      "Elbow tolerates pressdown, overhead extension, and banded isometric holds without next-morning stiffness over 10 min."
     ],
-    fail: "If mechanical symptoms persist, prepare a clinician review packet before combat intensity."
+    fail: "If mechanical symptoms persist, prepare a clinician review packet before higher intensity."
   }
 ];
 
-const shadowNote = "Technical rehab pace: clean stance, high guard, smooth breathing, slow kicks, and full reset after every kick.";
+const VIDEO = {
+  shortFoot: "DoEIW4Y8MEo",
+  toeYoga: "zSFlNXMtArw",
+  hipFlexor: "SDsjnuCf90U",
+  hipRotation: "iHAdSwm9ys0",
+  quadIso: "O1ZLyjK_V8s",
+  hamBridge: "qs3O-kowfTM",
+  hamCurl: "LtTcXXgeRYo",
+  hamCurlSingle: "9ATyxEznRRk",
+  balance: "HTVVv4ESgms",
+  tricepsPressdown: "xZ4yXK36X4M",
+  tricepsOverhead: "8-q04odgg4M",
+  tricepsIso: "12NUE0FLvag",
+  shoulderER0: "KMneHZE_t3w",
+  shoulderER90: "U7FCMR0A63g",
+  pullApart: "MnDpmNYUjbc",
+  yRaise: "69sfvYgWK2Y",
+  clamshell: "qNjh-nePA0s",
+  hipAbduction: "l96rtpWwRbs",
+  gluteBridge: "zgZMU_hv7es",
+  hipHinge: "seMtcXDB3uQ"
+};
+
+function ex(name, sets, description, target, video, video_note) {
+  const item = { name, sets, description, target };
+  if (video) item.video = video;
+  if (video_note) item.video_note = video_note;
+  return item;
+}
+
+function spinBike(sets) {
+  return ex(
+    "Spin bike",
+    sets,
+    "Bike comes before leg press. Seat high, low resistance, smooth cadence, and quiet knee tracking.",
+    "Best match for bilateral Hoffa edema and patellar cartilage irritation: warm volume without deep knee compression or end-range knee pinch."
+  );
+}
+
+function legPress(sets, description) {
+  return ex(
+    "Leg press - bilateral",
+    sets,
+    description,
+    "Keeps lower-body strength while controlling the variables that matter for Hoffa edema, patellar tracking, and meniscus catch: depth, foot arch, tempo, and next-day baseline."
+  );
+}
+
+function tempoLegPress(sets) {
+  return ex(
+    "Leg press - light tempo bilateral",
+    sets,
+    "Same stance as Monday, lighter load, slower tempo. Stop before deep knee bend or front-inner kneecap rise.",
+    "Maintains a second machine exposure without turning Tuesday into another heavy lower-body day."
+  );
+}
+
+function legPressPause(sets) {
+  return ex(
+    "Leg press isometric pause",
+    sets,
+    "Pause in the comfortable mid-range. The pause is the stimulus; do not chase heavier load.",
+    "Adds calm time-under-tension for the patellofemoral system without terminal extension or deep flexion."
+  );
+}
+
+function singleLegPress(sets) {
+  return ex(
+    "Light single-leg leg press",
+    sets,
+    "Use only after clean bilateral sets. Keep the load very light, use hand support, and stop if arch or knee line fails.",
+    "Introduces unilateral strength for the bilateral grade I ACL signal without requiring floor balance under load."
+  );
+}
+
+function calfArch(sets) {
+  return ex(
+    "Calf raise + arch hold",
+    sets,
+    "Use a smooth bilateral raise. After the set, hold the arch active without toe gripping.",
+    "Connects calf strength to pronation control so the foot does not feed knee valgus."
+  );
+}
+
+function hamCurl(sets, single = false) {
+  return ex(
+    single ? "Single-leg banded hamstring curl" : "Banded prone hamstring curl",
+    sets,
+    single ? "Anchor band low behind you. Curl one heel toward the glute slowly, then return slower than you came in." : "Anchor band low behind you. Lie face down, curl both heels toward the glutes slowly, then return with a 3 sec eccentric.",
+    "Directly addresses the hamstring-underdevelopment gap and supports the bilateral grade I ACL signal by giving the hamstrings real knee-flexion work.",
+    single ? VIDEO.hamCurlSingle : VIDEO.hamCurl,
+    "Band stays light enough that the knee does not twist or cramp."
+  );
+}
+
+function heelBridge(sets) {
+  return ex(
+    "Hamstring heel-bridge isometric",
+    sets,
+    "Heels slightly farther from hips than a normal bridge. Lift just high enough to feel hamstrings, not low back or front hip.",
+    "Builds posterior-chain support for the left anterior hip pattern and improves the hamstring side of the quad-to-hamstring balance.",
+    VIDEO.hamBridge
+  );
+}
+
+function balance(sets) {
+  return ex(
+    "Single-leg balance - floor",
+    sets,
+    "Barefoot at home. Stand tall near a wall, set the arch first, then lift one foot. End the hold before arch collapse or knee drift.",
+    "Covers the missing ACL-control piece: single-leg proprioception at least 3x/week without unstable surfaces.",
+    VIDEO.balance,
+    "Use the stance concept only. Your gate is arch and knee-line quality, not max time."
+  );
+}
+
+function tricepsPressdown(sets) {
+  return ex(
+    "Banded triceps pressdown",
+    sets,
+    "Band anchored high. Elbows pinned, shoulder relaxed, press down slowly and stop just short of hard lockout.",
+    "Main slow-loading pattern for left triceps insertion enthesitis without snapping the irritated end range.",
+    VIDEO.tricepsPressdown,
+    "Slow eccentric matters more than band tension."
+  );
+}
+
+function tricepsOverhead(sets) {
+  return ex(
+    "Banded triceps overhead extension",
+    sets,
+    "Band anchored low behind you. Elbows point forward, lower behind head, extend smoothly, and stop short of hard lockout.",
+    "Second tendon angle for the left triceps insertion while still keeping load progressive and controlled.",
+    VIDEO.tricepsOverhead,
+    "No aggressive top lockout."
+  );
+}
+
+function tricepsIso(sets, angle) {
+  return ex(
+    "Banded elbow-extension isometric",
+    sets,
+    `Band anchored behind you at elbow height. Hold elbow at ${angle}; press gently into extension without changing the angle.`,
+    "Replaces the ambiguous surface-press setup with one exact elbow-extension angle for tendon load without joint motion.",
+    VIDEO.tricepsIso,
+    "If you cannot keep the angle exact, lower the band tension."
+  );
+}
+
+function shoulderER0(sets) {
+  return ex(
+    "Banded shoulder ER - elbow at side",
+    sets,
+    "Elbow tucked to ribs. Rotate from the shoulder with no trunk twist.",
+    "Keeps shoulder and scapular support online so elbow loading is not isolated from the rest of the arm chain.",
+    VIDEO.shoulderER0
+  );
+}
+
+function shoulderER90(sets) {
+  return ex(
+    "Banded shoulder ER - 90 deg",
+    sets,
+    "Elbow at shoulder height. Rotate smoothly through a small clean range.",
+    "Builds cuff control in a higher shoulder angle while Friday stays light.",
+    VIDEO.shoulderER90
+  );
+}
+
+function pullApart(sets) {
+  return ex(
+    "Band pull-apart",
+    sets,
+    "Arms slightly soft, pull smoothly, squeeze shoulder blades, and return slowly.",
+    "Posterior shoulder and scapular support reduce unwanted elbow compensation during triceps loading.",
+    VIDEO.pullApart
+  );
+}
+
+function yRaise(sets, name = "Banded Y raise") {
+  return ex(
+    name,
+    sets,
+    "Light band only. Lift smoothly, squeeze shoulder blades, and return under control.",
+    "Adds scapular control without making the left elbow absorb heavy work.",
+    VIDEO.yRaise
+  );
+}
+
+function clamshell(sets) {
+  return ex(
+    "Side-lying clamshell",
+    sets,
+    "Stack hips and rotate the thigh from the hip. Do not twist the foot first.",
+    "Targets the left hip ER deficit and the symptom pattern where the thigh fails to follow the foot.",
+    VIDEO.clamshell
+  );
+}
+
+function hipAbduction(sets) {
+  return ex(
+    "Standing hip abduction",
+    sets,
+    "Hold a wall lightly. Move the thigh from the hip through a small range while pelvis stays level.",
+    "Builds frontal-plane hip control for knee line and left hip centering without deep hip load.",
+    VIDEO.hipAbduction
+  );
+}
+
+function gluteBridge(sets) {
+  return ex(
+    "Glute bridge",
+    sets,
+    "Bridge smoothly and finish with glutes. Keep ribs down and avoid low-back arching.",
+    "Supports the left anterior hip pattern by adding posterior hip capacity in a low-irritation position.",
+    VIDEO.gluteBridge
+  );
+}
+
+function hipHinge(sets) {
+  return ex(
+    "Wall hip hinge drill",
+    sets,
+    "Stand a short step from a wall. Push hips back toward the wall through a tiny range, then return tall.",
+    "Reintroduces hinge mechanics only after early hip calming, with a wall target to prevent left anterior hip glide.",
+    VIDEO.hipHinge,
+    "Range stays tiny unless the left groin/front hip stays quiet the next day."
+  );
+}
 
 const sessions = {
   0: {
     "OUTDOOR A": [
-      {
-        name: "Spin bike",
-        sets: "18-22 min | low resistance | steady cadence",
-        description: "Bike comes before leg press. Keep the seat high and pedal smoothly. Knees track quietly.",
-        target: "Builds knee-friendly volume and helps the knees warm before machine work.",
-        ref: true
-      },
-      {
-        name: "Leg press - bilateral",
-        sets: "1x10 calibration -> 3x10 moderate | 30-70 deg | 3-1-2 tempo",
-        description: "Shoulder-width stance, slight turnout from the hip, tripod foot. Control the descent and stop before deep knee bend.",
-        target: "Keeps the useful machine pattern while removing single-leg complexity in the first two weeks.",
-        ref: true
-      },
-      {
-        name: "Leg press isometric pause",
-        sets: "2x5 reps with 5 sec pause | mid-range",
-        description: "Pause in the comfortable mid-range. The pause is the stimulus.",
-        target: "Adds calm time-under-tension without making load the goal.",
-        ref: true
-      },
-      {
-        name: "Bilateral calf raise + arch hold",
-        sets: "3x10 calf raise + 5 sec short-foot hold after each set",
-        description: "Use the outdoor step if available. The rep counts only if the arch stays active.",
-        target: "Connects calf work to pronation control."
-      }
+      spinBike("25 min | low resistance | steady cadence"),
+      legPress("1x10 calibration -> 3x10 moderate | 30-70 deg | 3-1-2 tempo", "Shoulder-width stance, slight turnout from the hip, active arch. Control the descent and stop before deep knee bend."),
+      legPressPause("2x5 reps with 5 sec pause | mid-range"),
+      calfArch("3x10 calf raise + 5 sec arch hold after each set")
     ],
     "OUTDOOR B": [
-      {
-        name: "Spin bike",
-        sets: "24-28 min | low resistance | steady cadence",
-        description: "Longest lower-body exposure of the week. Keep the cadence smooth and easy.",
-        target: "Raises bike dose while keeping knee stress predictable.",
-        ref: true
-      },
-      {
-        name: "Leg press - light tempo bilateral",
-        sets: "3x10 light/moderate | 30-70 deg | 4-2-2 tempo",
-        description: "Same setup as Monday, lighter load, slower tempo.",
-        target: "Keeps strength frequency while keeping Tuesday controlled.",
-        ref: true
-      },
-      {
-        name: "Tripod calf raise",
-        sets: "2x10 bilateral + 2x20 sec tripod holds/side",
-        description: "Finish with standing tripod holds in shoes.",
-        target: "Makes foot control specific to the outdoor shoe environment."
-      }
+      spinBike("25 min | low resistance | steady cadence"),
+      tempoLegPress("3x10 light/moderate | 30-70 deg | 4-2-2 tempo"),
+      balance("3x15 sec/side"),
+      calfArch("2x10 calf raise + 2x15 sec arch hold/side")
     ],
-    "UPPER A": [
-      {
-        name: "Banded triceps pressdown",
-        sets: "3x10 | 3-1-3 tempo | stop 5 deg short of lockout",
-        description: "Elbows pinned, shoulder relaxed, slow down and slow return.",
-        target: "Main triceps tendon loading pattern for the left elbow.",
-        video: "xZ4yXK36X4M",
-        video_note: "Never snap into lockout. Slow eccentric matters."
-      },
-      {
-        name: "Triceps isometric at 90 deg",
-        sets: "2x20 sec | moderate effort",
-        description: "Press fist or forearm into an immovable surface. Keep the contraction local to the triceps.",
-        target: "Adds a low-motion tendon exposure without irritating end range.",
-        ref: true
-      },
-      {
-        name: "Shoulder ER 0 deg",
-        sets: "2x15/side | 2-1-2 tempo",
-        description: "Elbow tucked to ribs. Rotate from the shoulder with no trunk twist.",
-        target: "Supports punching mechanics and right shoulder control.",
-        video: "KMneHZE_t3w"
-      },
-      {
-        name: "Band pull-apart",
-        sets: "2x12 | 2 sec squeeze",
-        description: "Arms stay slightly short of lockout. Pull apart smoothly and squeeze shoulder blades.",
-        target: "Builds posterior shoulder and scapular support for punching.",
-        video: "MnDpmNYUjbc",
-        video_note: "Keep elbows slightly soft for the left triceps."
-      },
-      {
-        name: "Barefoot arch reset",
-        sets: "3x20 sec/side",
-        description: "Short-foot hold with relaxed toes.",
-        target: "Short frequent arch practice builds carryover.",
-        video: "DoEIW4Y8MEo"
-      }
+    "LONG HOME": [
+      hamCurl("2x10 | 3 sec return"),
+      heelBridge("3x20 sec"),
+      tricepsPressdown("3x10 | 3-1-3 tempo | stop short of hard lockout"),
+      tricepsIso("2x20 sec | moderate effort", "90 deg"),
+      shoulderER0("2x15/side | 2-1-2 tempo"),
+      pullApart("2x12 | 2 sec squeeze"),
+      balance("3x15 sec/side")
     ],
-    "HIP FOOT": [
-      {
-        name: "Supported standing march",
-        sets: "3x8/side | slow",
-        description: "Hold a wall lightly so balance does not dominate. Use shoulder-width turnout.",
-        target: "Trains standing hip flexion while controlling the balance variable.",
-        video: "AzaVcEgAj28",
-        video_note: "Use the marching control concept; standing version uses a wall."
-      },
-      {
-        name: "Side-lying clamshell",
-        sets: "3x10/side + 15 sec hold",
-        description: "Stack hips. Rotate the thigh from the hip.",
-        target: "Builds hip external-rotator capacity without standing hinge stress.",
-        video: "qNjh-nePA0s"
-      },
-      {
-        name: "Glute bridge",
-        sets: "3x10 | 2 sec squeeze",
-        description: "Bridge smoothly and finish with glutes, not low back.",
-        target: "Builds posterior hip capacity in a position the left hip tolerates.",
-        video: "zgZMU_hv7es"
-      },
-      {
-        name: "Floor balance - arch quality",
-        sets: "4x10-15 sec/side",
-        description: "Barefoot. End each hold while the arch is still active.",
-        target: "Balance work starts on the floor and is judged by foot quality.",
-        video: "ryn8HlWVdTM",
-        video_note: "Use the tripod position from the video before lifting one foot."
-      },
-      {
-        name: "Technical shadowboxing",
-        sets: "6-8 min | slow punches + slow controlled kicks",
-        description: shadowNote,
-        target: "Returns MMA technique as controlled rehab, not conditioning."
-      }
+    "LIGHT HOME": [
+      tricepsOverhead("2x10 | light | 3-1-3 tempo"),
+      shoulderER90("2x12/side | 2-1-2 tempo"),
+      hipAbduction("2x10/side | wall support"),
+      yRaise("2x10 | 2 sec squeeze"),
+      ex("Toe yoga reset", "2 min easy", "Move big toe and lesser toes separately without gripping the floor.", "Keeps foot-control frequency high while Friday stays short.", VIDEO.toeYoga)
     ],
-    "UPPER B": [
-      {
-        name: "Banded triceps overhead extension",
-        sets: "3x10 | 3-1-3 tempo | stop 5 deg short of lockout",
-        description: "Anchor low, face away, lower behind head, extend slowly.",
-        target: "Second triceps angle for the left elbow.",
-        video: "8-q04odgg4M",
-        video_note: "Stop just short of lockout at the top."
-      },
-      {
-        name: "Triceps isometric at punch angle",
-        sets: "2x15 sec | arm 5 deg short of lockout",
-        description: "Hold a light band or immovable press in a straight-punch line.",
-        target: "Begins elbow tolerance in the future punch position.",
-        video: "QMcgkTL_XX8",
-        video_note: "Use the isometric triceps concept. Your position is a straight-punch line, 5 deg short of lockout."
-      },
-      {
-        name: "Shoulder ER 90 deg",
-        sets: "2x12/side | 2-1-2 tempo",
-        description: "Elbow at shoulder height in a high-five position. Rotate smoothly.",
-        target: "Builds cuff control in a strike-relevant shoulder angle.",
-        video: "U7FCMR0A63g"
-      },
-      {
-        name: "Banded Y raise",
-        sets: "2x10 | 2 sec squeeze",
-        description: "Light band, smooth lift, squeeze shoulder blades.",
-        target: "Scapular control without overloading the elbow.",
-        video: "69sfvYgWK2Y",
-        video_note: "Phase 1 uses Y only."
-      },
-      {
-        name: "Easy foot reset",
-        sets: "2 min toe yoga + 2x20 sec tripod/side",
-        description: "Keep this crisp and easy.",
-        target: "Maintains foot frequency without making Friday overloaded.",
-        video: "zSFlNXMtArw"
-      }
+    "HIP BALANCE": [
+      clamshell("3x10/side + 15 sec hold"),
+      gluteBridge("2x10 | 2 sec squeeze"),
+      hamCurl("2x10 | light"),
+      balance("3x15 sec/side")
     ],
-    "SKILL": [
-      {
-        name: "Technical shadowboxing",
-        sets: "8-10 min | slow punches + slow controlled kicks",
-        description: shadowNote,
-        target: "Second weekly skill exposure with clean stance and kick control."
-      },
-      {
-        name: "Slow kick chamber with wall support",
-        sets: "2x5/side",
-        description: "Hand on wall. Chamber slowly, extend low, return slowly.",
-        target: "Turns kicks into single-leg control practice.",
-        video: "w1xWXKq2Sss",
-        video_note: "Use the chamber concept. Keep your kicks low and slow."
-      },
-      {
-        name: "Floor arch balance",
-        sets: "3x10-15 sec/side",
-        description: "Set the tripod first, then lift one foot.",
-        target: "Reinforces foot control before the week closes.",
-        video: "ryn8HlWVdTM"
-      },
-      {
-        name: "Light elbow isometric",
-        sets: "2x20 sec @ 90 deg",
-        description: "Easy to moderate effort.",
-        target: "Gives the elbow one extra tendon signal without making Saturday heavy.",
-        ref: true
-      }
+    "SHORT RESET": [
+      heelBridge("2x20 sec"),
+      balance("2x15 sec/side"),
+      ex("Short-foot reset", "2x20 sec/side", "Barefoot arch hold with relaxed toes.", "Keeps pronation control active without making Sunday a long session.", VIDEO.shortFoot)
     ]
   },
   1: {
     "OUTDOOR A": [
-      {
-        name: "Spin bike",
-        sets: "22-26 min | low resistance",
-        description: "Extend the ride only from quiet 24-hour response.",
-        target: "Bike remains the main knee-friendly volume builder.",
-        ref: true
-      },
-      {
-        name: "Leg press - bilateral",
-        sets: "3x10-12 moderate | 30-70 deg | 3-1-2 tempo",
-        description: "Add reps before load. Keep tripod foot and mild turnout.",
-        target: "Builds capacity without changing the machine or stance variables.",
-        ref: true
-      },
-      {
-        name: "Leg press isometric pause",
-        sets: "3x5 reps with 5 sec pause | mid-range",
-        description: "Keep the pause controlled and quiet.",
-        target: "Progresses time under tension without adding another knee exercise.",
-        ref: true
-      },
-      {
-        name: "Bilateral calf raise + arch hold",
-        sets: "3x12 + 5 sec short-foot hold after each set",
-        description: "Arch stays active through the full raise and descent.",
-        target: "Builds foot/calf control inside the shoe environment."
-      }
+      spinBike("25 min | low resistance | steady cadence"),
+      legPress("3x10-12 moderate | 30-70 deg | 3-1-2 tempo", "Add reps before load. Keep active arch and mild hip-led turnout."),
+      legPressPause("3x5 reps with 5 sec pause | mid-range"),
+      calfArch("3x12 calf raise + 5 sec arch hold after each set")
     ],
     "OUTDOOR B": [
-      {
-        name: "Spin bike",
-        sets: "28-32 min | low resistance",
-        description: "Longest ride. The knees should feel same or better afterward.",
-        target: "Tests whether more cycling is useful for the knee baseline.",
-        ref: true
-      },
-      {
-        name: "Leg press - light tempo bilateral",
-        sets: "3x12 light/moderate | 30-70 deg | 4-2-2 tempo",
-        description: "Tempo stays the stimulus.",
-        target: "Keeps a second lower-body strength exposure controlled.",
-        ref: true
-      },
-      {
-        name: "Very light single-leg leg press",
-        sets: "1x6/side | very light | 30-60 deg",
-        description: "Use this only after clean bilateral sets. Hand support and strict tripod foot.",
-        target: "Reintroduces unilateral machine work cautiously."
-      },
-      {
-        name: "Tripod calf raise",
-        sets: "2x12 bilateral + 2x20 sec tripod holds/side",
-        description: "The set ends while the arch is still active.",
-        target: "Keeps pronation control as a real criterion."
-      }
+      spinBike("25-28 min | low resistance | steady cadence"),
+      tempoLegPress("3x12 light/moderate | 30-70 deg | 4-2-2 tempo"),
+      singleLegPress("1x6/side | very light | 30-60 deg"),
+      balance("4x15 sec/side"),
+      calfArch("2x12 calf raise + 2x20 sec arch hold/side")
     ],
-    "UPPER A": [
-      {
-        name: "Banded triceps pressdown",
-        sets: "3x12 | 3-1-3 tempo",
-        description: "Progress reps while keeping the elbow quiet the next morning.",
-        target: "Moves elbow loading toward useful tendon capacity.",
-        video: "xZ4yXK36X4M"
-      },
-      {
-        name: "Triceps isometric at 90 deg",
-        sets: "3x20 sec | moderate effort",
-        description: "Stay local to triceps; shoulder stays relaxed.",
-        target: "Third set adds dose without extra motion.",
-        ref: true
-      },
-      {
-        name: "Shoulder ER 0 deg",
-        sets: "3x15/side | 2-1-2 tempo",
-        description: "Elbow tucked and movement clean.",
-        target: "Balances increased triceps work with cuff control.",
-        video: "KMneHZE_t3w"
-      },
-      {
-        name: "Band pull-apart",
-        sets: "2x15 | 2 sec squeeze",
-        description: "Smooth pull and controlled return.",
-        target: "Scapular support for technical punching.",
-        video: "MnDpmNYUjbc"
-      },
-      {
-        name: "Barefoot arch reset",
-        sets: "4x20 sec/side",
-        description: "Short-foot hold with quiet toes.",
-        target: "More frequency for automatic arch control.",
-        video: "DoEIW4Y8MEo"
-      }
+    "LONG HOME": [
+      hamCurl("3x10 | 3 sec return"),
+      heelBridge("3x25 sec"),
+      tricepsPressdown("3x12 | 3-1-3 tempo"),
+      tricepsIso("3x20 sec | moderate effort", "90 deg"),
+      shoulderER0("3x15/side | 2-1-2 tempo"),
+      pullApart("2x15 | 2 sec squeeze"),
+      balance("4x15 sec/side")
     ],
-    "HIP FOOT": [
-      {
-        name: "Standing hip ER/abduction",
-        sets: "3x8/side | wall support",
-        description: "Small range. Move from the hip and keep the foot quiet.",
-        target: "Adds standing hip capacity while keeping balance assistance available.",
-        video: "ITyJfMetA8s",
-        video_note: "Use the standing abduction control; your range stays small."
-      },
-      {
-        name: "Supported low kick chamber",
-        sets: "3x5/side | slow",
-        description: "Hand on wall. Chamber low and controlled.",
-        target: "Builds hip and knee placement for kicks without speed.",
-        video: "pFstM_mfbAk",
-        video_note: "Use the balance/chamber concept. Keep support available."
-      },
-      {
-        name: "Side-lying clamshell",
-        sets: "3x12/side + 20 sec hold",
-        description: "Thigh rotates from the hip.",
-        target: "Progresses hip volume without provocative hinge loading.",
-        video: "qNjh-nePA0s"
-      },
-      {
-        name: "Floor balance - arch quality",
-        sets: "5x10-20 sec/side",
-        description: "Hands may hover near a wall.",
-        target: "Balance progresses by arch control, not duration.",
-        video: "ryn8HlWVdTM"
-      },
-      {
-        name: "Technical shadowboxing",
-        sets: "8-10 min | slow punches + slow controlled kicks",
-        description: shadowNote,
-        target: "Keeps MMA technique present while respecting symptom gates."
-      }
+    "LIGHT HOME": [
+      tricepsOverhead("3x10 | light/moderate | 3-1-3 tempo"),
+      shoulderER90("2x12/side | 2-1-2 tempo"),
+      hipAbduction("3x10/side | wall support"),
+      yRaise("2x12 | 2 sec squeeze"),
+      ex("Toe yoga reset", "2 min easy", "Keep toes moving separately without gripping.", "Maintains foot frequency while Friday remains short.", VIDEO.toeYoga)
     ],
-    "UPPER B": [
-      {
-        name: "Banded triceps overhead extension",
-        sets: "3x12 | 3-1-3 tempo",
-        description: "Progress reps while preserving slow control.",
-        target: "Progresses the second triceps angle.",
-        video: "8-q04odgg4M"
-      },
-      {
-        name: "Triceps isometric at punch angle",
-        sets: "3x15 sec",
-        description: "Hold a light band in a straight-punch line, arm 5 deg short of lockout.",
-        target: "Builds tolerance in the future punch position.",
-        video: "QMcgkTL_XX8",
-        video_note: "Use the isometric triceps concept. Your position is a straight-punch line, 5 deg short of lockout."
-      },
-      {
-        name: "Shoulder ER 90 deg",
-        sets: "3x12/side | 2-1-2 tempo",
-        description: "Smooth high-five position rotation.",
-        target: "Upper-body distribution stays even across Wed-Fri.",
-        video: "U7FCMR0A63g"
-      },
-      {
-        name: "Banded Y raise",
-        sets: "2x12 | 2 sec squeeze",
-        description: "Controlled lift and return.",
-        target: "Scapular support without excessive elbow stress.",
-        video: "69sfvYgWK2Y"
-      },
-      {
-        name: "Easy foot reset",
-        sets: "2 min toe yoga + 3x20 sec tripod/side",
-        description: "Keep it easy and crisp.",
-        target: "Foot signal without Friday overload.",
-        video: "zSFlNXMtArw"
-      }
+    "HIP BALANCE": [
+      clamshell("3x12/side + 20 sec hold"),
+      gluteBridge("3x10 | 2 sec squeeze"),
+      hamCurl("3x10 | light/moderate"),
+      balance("4x15-20 sec/side")
     ],
-    "SKILL": [
-      {
-        name: "Technical shadowboxing",
-        sets: "8-12 min | slow punches + slow controlled kicks",
-        description: shadowNote,
-        target: "Builds toward 2-3 weekly skill sessions without making it conditioning."
-      },
-      {
-        name: "Slow kick chamber with wall support",
-        sets: "3x5/side",
-        description: "Tripod foot before each rep.",
-        target: "Rehearses single-leg kick positions under control.",
-        video: "pFstM_mfbAk"
-      },
-      {
-        name: "Floor arch balance",
-        sets: "4x10-20 sec/side",
-        description: "Stable floor only.",
-        target: "Keeps the key balance limiter honest.",
-        video: "ryn8HlWVdTM"
-      },
-      {
-        name: "Light elbow isometric",
-        sets: "2x20 sec @ 90 deg",
-        description: "Easy to moderate effort.",
-        target: "Third weekly elbow exposure without heavy fatigue.",
-        ref: true
-      }
+    "SHORT RESET": [
+      heelBridge("2x25 sec"),
+      balance("3x15 sec/side"),
+      ex("Short-foot reset", "2x25 sec/side", "Barefoot arch hold with relaxed toes.", "Keeps foot control active without increasing Sunday length.", VIDEO.shortFoot)
     ]
   },
   2: {
     "OUTDOOR A": [
-      {
-        name: "Spin bike",
-        sets: "24-28 min | low resistance",
-        description: "Use the bike dose that makes knees feel best.",
-        target: "Maintains the cleanest lower-body volume tool.",
-        ref: true
-      },
-      {
-        name: "Leg press - bilateral",
-        sets: "3x10 moderate | 30-80 deg if quiet",
-        description: "Return toward 80 deg only from quiet front-inner kneecap response.",
-        target: "Tests range tolerance without making load the headline.",
-        ref: true
-      },
-      {
-        name: "Light single-leg leg press",
-        sets: "1-2x6/side | very light | 30-60 deg",
-        description: "Arch control and knee tracking decide the set.",
-        target: "Begins controlled unilateral loading without balance chaos."
-      },
-      {
-        name: "Calf raise + arch hold",
-        sets: "3x12 bilateral or 2x8/side assisted",
-        description: "Choose the version that preserves arch control.",
-        target: "Progression is allowed only when pronation control holds."
-      }
+      spinBike("25-30 min | low resistance | steady cadence"),
+      legPress("3x10 moderate | 30-80 deg only if quiet", "Return toward 80 deg only from quiet front-inner kneecap response."),
+      singleLegPress("1-2x6/side | very light | 30-60 deg"),
+      calfArch("3x12 bilateral or 2x8/side assisted")
     ],
     "OUTDOOR B": [
-      {
-        name: "Spin bike",
-        sets: "32-35 min | low resistance",
-        description: "Cap the ride at 35 min.",
-        target: "Tests the upper end of bike dose before return-prep weeks.",
-        ref: true
-      },
-      {
-        name: "Leg press - light tempo bilateral",
-        sets: "3x10-12 | 30-80 deg if quiet | 4-2-2 tempo",
-        description: "Tuesday stays lighter than Monday.",
-        target: "Maintains strength frequency without making Tuesday the hard day.",
-        ref: true
-      },
-      {
-        name: "Tripod calf raise",
-        sets: "2x12 bilateral + 3x20 sec tripod holds/side",
-        description: "Use shoes and make it specific to outdoor gait.",
-        target: "Foot control in the exact footwear used outside."
-      }
+      spinBike("25-30 min | low resistance | steady cadence"),
+      tempoLegPress("3x10-12 | 30-80 deg only if quiet | 4-2-2 tempo"),
+      balance("4x20 sec/side"),
+      calfArch("2x12 calf raise + 3x20 sec arch hold/side")
     ],
-    "UPPER A": [
-      {
-        name: "Banded triceps pressdown",
-        sets: "4x10 | 3-1-3 tempo",
-        description: "Add a set, not speed.",
-        target: "Elbow moves toward real capacity while remaining controlled.",
-        video: "xZ4yXK36X4M"
-      },
-      {
-        name: "Triceps isometric at 90 deg",
-        sets: "3x25 sec",
-        description: "Moderate effort.",
-        target: "Longer tendon hold for sustained load tolerance.",
-        ref: true
-      },
-      {
-        name: "Shoulder ER 0 deg",
-        sets: "3x15/side | 2-1-2 tempo",
-        description: "Clean form over band tension.",
-        target: "Keeps upper-body support strong enough for shadowboxing.",
-        video: "KMneHZE_t3w"
-      },
-      {
-        name: "Band pull-apart",
-        sets: "3x12 | 2 sec squeeze",
-        description: "Controlled return.",
-        target: "Posterior shoulder capacity.",
-        video: "MnDpmNYUjbc"
-      },
-      {
-        name: "Barefoot arch reset",
-        sets: "4x25 sec/side",
-        description: "Quiet toes, active arch.",
-        target: "More endurance for foot posture.",
-        video: "DoEIW4Y8MEo"
-      }
+    "LONG HOME": [
+      hamCurl("3x12 | 3 sec return"),
+      heelBridge("3x30 sec"),
+      tricepsPressdown("4x10 | 3-1-3 tempo"),
+      tricepsIso("3x25 sec | moderate effort", "90 deg"),
+      shoulderER0("3x15/side | 2-1-2 tempo"),
+      pullApart("3x12 | 2 sec squeeze"),
+      balance("4x20 sec/side")
     ],
-    "HIP FOOT": [
-      {
-        name: "Tiny-range hip hinge retraining",
-        sets: "3x5 | very shallow",
-        description: "Shoulder-width turnout. Move through the range the left hip owns cleanly.",
-        target: "Reintroduces the standing hinge pattern at a tiny dose.",
-        ref: true
-      },
-      {
-        name: "Standing hip ER/abduction",
-        sets: "3x10/side | wall support as needed",
-        description: "Hip leads, foot follows.",
-        target: "Builds standing hip capacity around the safest stance.",
-        video: "ITyJfMetA8s"
-      },
-      {
-        name: "Single-leg kick-position hold",
-        sets: "3x8-12 sec/side | floor",
-        description: "Low chamber, wall nearby. Hold only while arch and knee stay quiet.",
-        target: "Adds single-leg kick specificity without unstable surfaces.",
-        video: "pFstM_mfbAk"
-      },
-      {
-        name: "Technical shadowboxing",
-        sets: "10-12 min | controlled combinations",
-        description: shadowNote,
-        target: "Integrates skill without impact or speed."
-      }
+    "LIGHT HOME": [
+      tricepsOverhead("3x10 | moderate | 3-1-3 tempo"),
+      shoulderER90("3x12/side | 2-1-2 tempo"),
+      hipAbduction("3x10/side | wall support optional"),
+      yRaise("2x8 each letter", "Banded Y-T raise"),
+      hipHinge("3x5 | tiny range")
     ],
-    "UPPER B": [
-      {
-        name: "Banded triceps overhead extension",
-        sets: "4x10 | 3-1-3 tempo",
-        description: "Add a set only from quiet next-day elbow response.",
-        target: "Second slow tendon exposure.",
-        video: "8-q04odgg4M"
-      },
-      {
-        name: "Triceps isometric at punch angle",
-        sets: "3x20 sec",
-        description: "Light band hold, arm just short of lockout.",
-        target: "More punch-position tolerance without impact.",
-        video: "QMcgkTL_XX8",
-        video_note: "Use the isometric triceps concept. Your position is a straight-punch line, 5 deg short of lockout."
-      },
-      {
-        name: "Shoulder ER 90 deg",
-        sets: "3x12/side | 2-1-2 tempo",
-        description: "Smooth and controlled.",
-        target: "Builds shoulder control for technical punching.",
-        video: "U7FCMR0A63g"
-      },
-      {
-        name: "Banded Y-T raise",
-        sets: "2x8 each letter",
-        description: "Add T only if smooth.",
-        target: "Builds scapular control for shadowboxing.",
-        video: "69sfvYgWK2Y"
-      },
-      {
-        name: "Easy foot reset",
-        sets: "3 min toe yoga + tripod",
-        description: "Keep Friday manageable.",
-        target: "Maintains distribution balance.",
-        video: "zSFlNXMtArw"
-      }
+    "HIP BALANCE": [
+      clamshell("3x12/side + 20 sec hold"),
+      hamCurl("3x12 | moderate"),
+      balance("4x20 sec/side")
     ],
-    "SKILL": [
-      {
-        name: "Technical shadowboxing",
-        sets: "10-12 min | controlled combinations",
-        description: shadowNote,
-        target: "Third weekly skill exposure."
-      },
-      {
-        name: "Slow kick chamber + low extension",
-        sets: "3x5/side",
-        description: "Wall support allowed. Smooth chamber, low extension, controlled return.",
-        target: "Kicks progress through cleaner control.",
-        video: "w1xWXKq2Sss"
-      },
-      {
-        name: "Single-leg kick-position hold",
-        sets: "3x8-12 sec/side | floor",
-        description: "Hold only while the arch stays active.",
-        target: "Connects foot control to MMA positions.",
-        video: "pFstM_mfbAk"
-      },
-      {
-        name: "Light elbow isometric",
-        sets: "2x25 sec @ 90 deg",
-        description: "Easy to moderate only.",
-        target: "Keeps the third elbow exposure light.",
-        ref: true
-      }
+    "SHORT RESET": [
+      heelBridge("2x30 sec"),
+      balance("3x20 sec/side"),
+      ex("Short-foot reset", "2x25 sec/side", "Barefoot arch hold with relaxed toes.", "Maintains foot control without turning Sunday into a full session.", VIDEO.shortFoot)
     ]
   },
   3: {
     "OUTDOOR A": [
-      {
-        name: "Spin bike",
-        sets: "24-30 min | low resistance",
-        description: "Maintain the dose that makes knees feel best.",
-        target: "Return prep means sustainable volume.",
-        ref: true
-      },
-      {
-        name: "Leg press - bilateral",
-        sets: "3x8-10 moderate | 30-80 deg if quiet",
-        description: "Clean tempo and quiet symptoms are the target.",
-        target: "Keeps machine strength present without chasing max load.",
-        ref: true
-      },
-      {
-        name: "Light single-leg leg press",
-        sets: "2x6/side | light | 30-60 deg",
-        description: "Progress only from a quiet previous week.",
-        target: "Prepares for later gym lifting without demanding full return."
-      },
-      {
-        name: "Calf raise + arch hold",
-        sets: "3x12 or 2x8/side assisted",
-        description: "Choose the version that preserves arch control.",
-        target: "Foot control remains the gate for progression."
-      }
+      spinBike("25-30 min | low resistance | steady cadence"),
+      legPress("3x8-10 moderate | 30-80 deg only if quiet", "Clean tempo and quiet symptoms are the target. Do not chase max load."),
+      singleLegPress("2x6/side | light | 30-60 deg"),
+      calfArch("3x12 bilateral or 2x8/side assisted")
     ],
     "OUTDOOR B": [
-      {
-        name: "Spin bike",
-        sets: "32-35 min | low resistance",
-        description: "Stay steady and smooth.",
-        target: "Confirms a practical bike dose for the next training block.",
-        ref: true
-      },
-      {
-        name: "Leg press - light tempo bilateral",
-        sets: "3x10 | 30-80 deg if quiet | 4-2-2 tempo",
-        description: "Tuesday remains lighter than Monday.",
-        target: "Keeps weekly load distribution balanced.",
-        ref: true
-      },
-      {
-        name: "Tripod calf raise",
-        sets: "2x12 bilateral + 3x25 sec tripod holds/side",
-        description: "Shoes on. Arch first, knee second.",
-        target: "Transfers foot control into real outside footwear."
-      }
+      spinBike("25-30 min | low resistance | steady cadence"),
+      tempoLegPress("3x10 | 30-80 deg only if quiet | 4-2-2 tempo"),
+      balance("4x25 sec/side"),
+      calfArch("2x12 calf raise + 3x25 sec arch hold/side")
     ],
-    "UPPER A": [
-      {
-        name: "Banded triceps pressdown",
-        sets: "4x8-10 | stronger band if quiet",
-        description: "Increase band only while reps stay slow.",
-        target: "Return prep for gym lifting without jumping to heavy machines.",
-        video: "xZ4yXK36X4M"
-      },
-      {
-        name: "Triceps isometric at 90 deg",
-        sets: "3x30 sec",
-        description: "Moderate effort.",
-        target: "Sustained elbow capacity.",
-        ref: true
-      },
-      {
-        name: "Shoulder ER 0 deg",
-        sets: "3x15/side | 2-1-2 tempo",
-        description: "Clean form over band tension.",
-        target: "Keeps punching-support musculature online.",
-        video: "KMneHZE_t3w"
-      },
-      {
-        name: "Band pull-apart",
-        sets: "3x15 | 2 sec squeeze",
-        description: "Smooth pull and return.",
-        target: "Posterior shoulder endurance.",
-        video: "MnDpmNYUjbc"
-      },
-      {
-        name: "Barefoot arch reset",
-        sets: "4x25 sec/side",
-        description: "Quiet toes, active arch.",
-        target: "Maintains daily-life carryover.",
-        video: "DoEIW4Y8MEo"
-      }
+    "LONG HOME": [
+      hamCurl("4x10 | 3 sec return"),
+      heelBridge("3x35 sec"),
+      tricepsPressdown("4x8-10 | stronger band only if quiet"),
+      tricepsIso("3x30 sec | moderate effort", "90 deg"),
+      shoulderER0("3x15/side | 2-1-2 tempo"),
+      pullApart("3x15 | 2 sec squeeze"),
+      balance("4x25 sec/side")
     ],
-    "HIP FOOT": [
-      {
-        name: "Shallow hip hinge retraining",
-        sets: "3x6 | tiny-to-small range",
-        description: "Progress range only from quiet hip response.",
-        target: "Prepares the hip for future lifting patterns.",
-        ref: true
-      },
-      {
-        name: "Standing hip ER/abduction",
-        sets: "3x10/side",
-        description: "Wall support optional. Shoulder-width turnout.",
-        target: "Builds hip control in the safest stance.",
-        video: "ITyJfMetA8s"
-      },
-      {
-        name: "Single-leg kick-position hold",
-        sets: "4x10-15 sec/side | floor",
-        description: "Low chamber. Arch active and knee quiet.",
-        target: "Makes kick positions steadier before future bagwork.",
-        video: "pFstM_mfbAk"
-      },
-      {
-        name: "Technical shadowboxing",
-        sets: "12-15 min | moderate technical pace",
-        description: shadowNote,
-        target: "Bridges rehab into the next MMA preparation block."
-      }
+    "LIGHT HOME": [
+      tricepsOverhead("3x10 | moderate | 3-1-3 tempo"),
+      shoulderER90("3x12/side | 2-1-2 tempo"),
+      hipAbduction("3x10/side | wall support optional"),
+      yRaise("2x10 each letter", "Banded Y-T raise"),
+      hipHinge("3x6 | tiny-to-small range")
     ],
-    "UPPER B": [
-      {
-        name: "Banded triceps overhead extension",
-        sets: "4x8-10 | stronger band if quiet",
-        description: "Slow reps. Smooth top position.",
-        target: "Second return-prep triceps strength angle.",
-        video: "8-q04odgg4M"
-      },
-      {
-        name: "Triceps isometric at punch angle",
-        sets: "3x20-25 sec",
-        description: "Light band hold just short of lockout.",
-        target: "Specific elbow tolerance for future punch impact.",
-        video: "QMcgkTL_XX8",
-        video_note: "Use the isometric triceps concept. Your position is a straight-punch line, 5 deg short of lockout."
-      },
-      {
-        name: "Shoulder ER 90 deg",
-        sets: "3x12/side | 2-1-2 tempo",
-        description: "Smooth high-five position rotation.",
-        target: "Upper-body control for shadowboxing and later bagwork.",
-        video: "U7FCMR0A63g"
-      },
-      {
-        name: "Banded Y-T raise",
-        sets: "2x10 each letter",
-        description: "Controlled and smooth.",
-        target: "Scapular endurance for technical punching.",
-        video: "69sfvYgWK2Y"
-      },
-      {
-        name: "Easy foot reset",
-        sets: "3 min toe yoga + tripod",
-        description: "Keep Friday manageable.",
-        target: "Prevents back-half-of-week overload.",
-        video: "zSFlNXMtArw"
-      }
+    "HIP BALANCE": [
+      clamshell("3x12/side + 25 sec hold"),
+      hamCurl("3x10/side | light", true),
+      balance("4x25 sec/side")
     ],
-    "SKILL": [
-      {
-        name: "Technical shadowboxing",
-        sets: "12-15 min | moderate technical pace",
-        description: shadowNote,
-        target: "Final phase skill exposure with strict symptom gates."
-      },
-      {
-        name: "Slow kick chamber + low extension",
-        sets: "4x5/side",
-        description: "Smooth chamber, low extension, controlled return.",
-        target: "Prepares slow kick mechanics for later bag reintroduction.",
-        video: "w1xWXKq2Sss"
-      },
-      {
-        name: "Single-leg kick-position hold",
-        sets: "4x10-15 sec/side | floor",
-        description: "Arch active, knee quiet, hip centered.",
-        target: "Turns balance into sport-specific control.",
-        video: "pFstM_mfbAk"
-      },
-      {
-        name: "Light elbow isometric",
-        sets: "2x30 sec @ 90 deg",
-        description: "Easy to moderate only.",
-        target: "Closes the week with a tendon signal, not fatigue.",
-        ref: true
-      }
+    "SHORT RESET": [
+      heelBridge("2x35 sec"),
+      balance("3x25 sec/side"),
+      ex("Short-foot reset", "2x30 sec/side", "Barefoot arch hold with relaxed toes.", "Keeps the foot-control signal alive without extending the session.", VIDEO.shortFoot)
     ]
   }
 };
@@ -1317,7 +951,7 @@ function render() {
     if (currentSession.session === "REST") {
       html += `<div class="rest-card">
         <div class="rest-title">REST DAY</div>
-        Rest, or take a 10-minute easy walk if it makes the knees and hip feel better. No makeup sessions.
+        Full rest outside the daily primer. No makeup sessions.
       </div>`;
     } else {
       const warmup = WARMUP[currentSession.session] || [];
